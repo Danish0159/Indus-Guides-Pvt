@@ -23,7 +23,7 @@ const Datatable = ({ columns }) => {
       const token = localStorage.getItem("x-access-token");
       if (token) {
         await axios
-          .delete(`https://fypbookingbea.adaptable.app/api/${path}/${id}`, {
+          .delete(`https://indus-guides-pvt-backend.vercel.app/api/${path}/${id}`, {
             headers: { "x-access-token": token },
           })
           .then((response) => {
@@ -35,7 +35,7 @@ const Datatable = ({ columns }) => {
           });
       }
       setList(list.filter((item) => item._id !== id));
-    } catch (err) {}
+    } catch (err) { }
   };
 
   const actionColumn = [

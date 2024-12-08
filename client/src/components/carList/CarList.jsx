@@ -13,7 +13,7 @@ const CarList = () => {
     const fetchCarList = async () => {
       try {
         const response = await fetch(
-          "https://fypbookingbea.adaptable.app/api/cars"
+          "https://indus-guides-pvt-backend.vercel.app/api/cars"
         );
         const data = await response.json();
         setCarList(data);

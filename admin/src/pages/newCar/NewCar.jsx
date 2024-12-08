@@ -58,7 +58,7 @@ const NewCar = () => {
       if (token) {
         console.log(newhotel);
         await axios
-          .post("https://fypbookingbea.adaptable.app/api" + "/cars", newhotel, {
+          .post("https://indus-guides-pvt-backend.vercel.app/api" + "/cars", newhotel, {
             // .post("http://localhost:1234/api/cars", newhotel, {
             headers: { "x-access-token": token },
           })

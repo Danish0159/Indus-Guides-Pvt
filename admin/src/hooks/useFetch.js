@@ -11,7 +11,7 @@ const useFetch = (url) => {
       setLoading(true);
       try {
         const res = await axios.get(
-          "https://fypbookingbea.adaptable.app/api" + url
+          "https://indus-guides-pvt-backend.vercel.app/api" + url
           // "http://localhost:1234/api" + url
         );
         setData(res.data);
@@ -27,7 +27,7 @@ const useFetch = (url) => {
     setLoading(true);
     try {
       const res = await axios.get(
-        "https://fypbookingbea.adaptable.app/api" + url
+        "https://indus-guides-pvt-backend.vercel.app/api" + url
         // "http://localhost:1234/api" + url
       );
       setData(res.data);

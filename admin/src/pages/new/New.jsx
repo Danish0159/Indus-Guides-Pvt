@@ -37,7 +37,7 @@ const New = ({ inputs, title }) => {
       };
       const token = localStorage.getItem("x-access-token");
       if (token) {
-        await axios.post("https://fypbookingbea.adaptable.app/api" + "/auth/register", newUser, {
+        await axios.post("https://indus-guides-pvt-backend.vercel.app/api" + "/auth/register", newUser, {
           headers: { "x-access-token": token },
         }).then((response) => {
           if (response.status == 200) {

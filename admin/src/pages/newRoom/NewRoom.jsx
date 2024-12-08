@@ -30,7 +30,7 @@ const NewRoom = () => {
       if (token) {
         await axios
           .post(
-            "https://fypbookingbea.adaptable.app/api" + `/rooms/${hotelId}`,
+            "https://indus-guides-pvt-backend.vercel.app/api" + `/rooms/${hotelId}`,
             { ...info, roomNumbers },
             {
               headers: { "x-access-token": token },

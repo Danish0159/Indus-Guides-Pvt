@@ -22,11 +22,11 @@ const Widget = ({ type }) => {
   useEffect(() => {
     const fetchRoomList = async () => {
       try {
-        const response = await fetch("https://fypbookingbea.adaptable.app/api/cars");
+        const response = await fetch("https://indus-guides-pvt-backend.vercel.app/api/cars");
         const data = await response.json();
         setRooms(data.length);
 
-        const responseU = await fetch("https://fypbookingbea.adaptable.app/api/users");
+        const responseU = await fetch("https://indus-guides-pvt-backend.vercel.app/api/users");
         const data2 = await responseU.json();
         setUsers(data2.length);
       } catch (error) {

@@ -58,7 +58,7 @@ const Reserve = ({ setOpen, hotelId, roomId }) => {
     try {
       await Promise.all(
         selectedRooms.map((roomId) => {
-          const res = axios.put(`https://fypbookingbea.adaptable.app/api/rooms/availability/${roomId}`, {
+          const res = axios.put(`https://indus-guides-pvt-backend.vercel.app/api/rooms/availability/${roomId}`, {
             dates: alldates,
           });
           return res.data;
@@ -67,7 +67,7 @@ const Reserve = ({ setOpen, hotelId, roomId }) => {
       toast.success("Room status has been updated.")
 
       console.log(roomId);
-      await axios.post("https://fypbookingbea.adaptable.app/api/reserve", { user: user._id, type: "hotel", hotel: hotelId, room: roomId })
+      await axios.post("https://indus-guides-pvt-backend.vercel.app/api/reserve", { user: user._id, type: "hotel", hotel: hotelId, room: roomId })
         .then((response) => {
           if (response.status == 200) {
             toast.success("Room Reservation status has been updated.");

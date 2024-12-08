@@ -23,7 +23,7 @@ const Reserve = () => {
     const fetchReserveList = async () => {
       try {
         const response = await fetch(
-          `https://fypbookingbea.adaptable.app/api/reserve/${user._id}`
+          `https://indus-guides-pvt-backend.vercel.app/api/reserve/${user._id}`
           // "http://localhost:1234/api/reserve"
         );
         const data = await response.json();

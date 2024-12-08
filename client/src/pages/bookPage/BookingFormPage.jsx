@@ -16,7 +16,7 @@ const BookingFormPage = () => {
   const fetchCar = async (id) => {
     try {
       const response = await fetch(
-        `https://fypbookingbea.adaptable.app/api/cars/${id}`
+        `https://indus-guides-pvt-backend.vercel.app/api/cars/${id}`
       );
       const data = await response.json();
       // Handle the fetched car object
@@ -116,7 +116,7 @@ const BookingFormPage = () => {
     console.log(returnTime);
     try {
       ///api/cars/bookings
-      await axios.patch(`https://fypbookingbea.adaptable.app/api/cars/${id}`, {
+      await axios.patch(`https://indus-guides-pvt-backend.vercel.app/api/cars/${id}`, {
         pickupTime,
         returnTime,
       });
@@ -128,7 +128,7 @@ const BookingFormPage = () => {
       // console.log("user", user._id);
 
       await axios
-        .post("https://fypbookingbea.adaptable.app/api/reserve", {
+        .post("https://indus-guides-pvt-backend.vercel.app/api/reserve", {
           user: user._id,
           type: "car",
           car: id,

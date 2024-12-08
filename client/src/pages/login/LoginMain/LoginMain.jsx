@@ -37,7 +37,7 @@ const LoginMain = () => {
   //   }
   //   dispatch({ type: "LOGIN_START" });
   //   try {
-  //     const res = await axios.post("https://fypbookingbea.adaptable.app/api" + "/auth/login", credentials);
+  //     const res = await axios.post("https://indus-guides-pvt-backend.vercel.app/api" + "/auth/login", credentials);
   //     dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
   //     navigate("/")
   //   } catch (err) {
@@ -75,7 +75,7 @@ const LoginMain = () => {
 
       dispatch({ type: "LOGIN_START" });
       try {
-        const res = await axios.post("https://fypbookingbea.adaptable.app/api" + "/auth/login", {
+        const res = await axios.post("https://indus-guides-pvt-backend.vercel.app/api" + "/auth/login", {
           username: values.username, password: values.password,
         });
         dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
