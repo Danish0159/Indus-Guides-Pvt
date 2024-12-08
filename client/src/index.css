@@ -1,0 +1,90 @@
+:root {
+  --clr-blue-2: #1f4b8a;
+
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+==============================
+Button Styles
+==============================
+*/
+.btn-small:link,
+.btn-small:visited {
+  display: inline-block;
+  color: var(--clr-blue-2);
+  background-color: white;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.4rem 2.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 850px) {
+
+  .btn-small:link,
+  .btn-small:visited {
+    font-size: 1rem;
+    padding: 0.5rem 1.8rem;
+  }
+}
+
+.blue-btn {
+  display: inline-block;
+  margin: auto;
+  padding: 0.6rem 2.5rem;
+  color: white;
+  font-size: 1.4rem;
+  background-color: var(--clr-blue-2);
+  border: none;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 1.8rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .blue-btn {
+    font-size: 1.2rem;
+  }
+}
+
+.submit-button {
+  display: block;
+  width: 200px;
+  font-weight: 500;
+}
+
+/*
+==============================
+Navigation Styles
+==============================
+*/
+.nav__parent {
+  background-color: #003580;
+}
+
+.nav__container {
+  max-width: 74.3rem;
+  margin: auto;
+  padding: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 850px) {
+  .btn-nav {
+    align-self: flex-end;
+  }
+}
+
+.nav__name {
+  font-size: 1.4rem;
+}

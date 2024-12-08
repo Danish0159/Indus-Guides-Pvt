@@ -1,0 +1,108 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.filter-input {
+  margin-bottom: 20px;
+}
+
+.car-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.car-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.car-info {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.car-info h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.car-info p {
+  margin: 0;
+  color: #888;
+}
+
+.car-image {
+  max-width: 250px;
+  height: auto;
+}
+
+.button-container {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.button-container button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+/* input[type="text"] {
+  background-color: #007af2;
+  color: #fdfdfd;
+  padding: 8px;
+  border: none;
+  width: 585px;
+  height: 35px;
+  /* border-radius: 4px; */
+
+.filter-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.filter-input .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.filter-input .icon i {
+  color: #fff8f8;
+}
+
+.filter-input input[type="text"] {
+  background-color: #007af2;
+  color: #fff;
+  padding: 8px;
+  padding-left: 40px;
+  /* Adjust this value to create space for the icon */
+  border: none;
+  border-radius: 4px;
+  width: 555px;
+  height: 35px;
+}
+
+.filter-input input[type="text"]::placeholder {
+  color: #ffffff;
+  padding-left: 10px;
+}

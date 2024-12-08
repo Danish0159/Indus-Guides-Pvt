@@ -1,0 +1,225 @@
+/* .hotelParent {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+} */
+
+.hotelReservedTitle {
+  font-size: 2rem;
+  color: #003580;
+  text-align: center;
+  margin: 2.5rem 0rem;
+}
+
+.hotelContainer {
+  flex: 1;
+  margin-top: 50px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 30px;
+}
+
+.hotelhomeTitle {
+  width: 1024px;
+  font-size: 20px;
+}
+
+.hotelsearchItem {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.hotelsiImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hotelsiDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 2;
+}
+
+.hotelsiTitle {
+  font-size: 20px;
+  color: #0071c2;
+}
+
+.hotelsiDistance {
+  font-size: 12px;
+}
+
+.hotelsiTaxiOp {
+  font-size: 12px;
+  background-color: #008009;
+  color: white;
+  width: max-content;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.hotelsiSubtitle {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hotelsiFeatures {
+  font-size: 12px;
+}
+
+.hotelsiCancelOp {
+  font-size: 12px;
+  color: #008009;
+  font-weight: bold;
+}
+
+.hotelsiCancelOpSubtitle {
+  font-size: 12px;
+  color: #008009;
+}
+
+.hotelsiDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotelsiRating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotelsiRating>span {
+  font-weight: 500;
+}
+
+.hotelsiRating>button {
+  background-color: #003580;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+}
+
+.hotelsiDetailTexts {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hotelsiPrice {
+  font-size: 24px;
+}
+
+.hotelsiTaxOp {
+  font-size: 12px;
+  color: gray;
+}
+
+.hotelsiCheckButton {
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.carReserve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0rem;
+  justify-content: center;
+}
+
+.carReserve>li {
+  width: 50%;
+  margin: 20px 0px;
+
+}
+
+.car-image {
+  max-width: 200px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.car-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.total-price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.receipt-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.receipt-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.receipt-label {
+  flex-basis: 70%;
+}
+
+.receipt-value {
+  flex-basis: 30%;
+  text-align: right;
+}
+
+.total-section {
+  margin-top: 20px;
+  border-top: 2px solid #333;
+  padding-top: 10px;
+}
+
+.total-label {
+  font-weight: bold;
+}
+
+.total-value {
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+}
